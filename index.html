@@ -26,23 +26,6 @@
         /* 區塊共用 */
         .section { padding: 40px 20px; }
         
-        /* 區塊 1：首屏爆點 */
-        .hero {
-            background: linear-gradient(135deg, #F3E8FF 0%, #FDF4F6 100%);
-            text-align: center;
-            padding: 50px 20px 40px;
-        }
-        .hero h1 { color: #5D3A77; font-size: 26px; margin-bottom: 15px; }
-        .hero p { color: #7B5C92; font-size: 16px; margin-bottom: 30px; font-weight: bold; }
-        
-        /* 主視覺圖片設定 */
-        .hero-img {
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        
         /* 發光按鈕設計 */
         .btn {
             display: block;
@@ -146,14 +129,13 @@
 
 <div class="container">
 
-    <!-- 【第一屏】首屏爆點 -->
-    <div class="section hero">
-        <!-- 💡 圖片放在這裡！把下面的「請貼上妳的圖片網址」替換掉就好 -->
-        <img src="請貼上妳的圖片網址" alt="華媽咪推薦雙效益生菌" class="hero-img">
-        
-        <h1>孩子過敏、揉鼻子、抓癢反覆不好…<br>很多時候問題其實在「腸道」</h1>
-        <p>不是只靠擦藥、換季注意而已<br>而是要把孩子的免疫地基慢慢養穩。</p>
-        <a href="#order" class="btn">👉 點我了解雙效益生菌</a>
+    <!-- 【第一屏】首屏爆點（滿版圖片版） -->
+    <div style="padding: 0; text-align: center; background-color: #FDF4F6;">
+        <!-- 將整張圖片變成一個大按鈕，點擊就會滑到下方訂購區 -->
+        <a href="#order" style="display: block;">
+            <!-- 這裡抓取妳剛剛上傳的 banner.jpg -->
+            <img src="banner.jpg" alt="華媽咪推薦雙效益生菌" style="width: 100%; display: block; border-bottom: 5px solid #FDF4F6;">
+        </a>
     </div>
 
     <!-- 【第二區】痛點區 -->
@@ -220,7 +202,7 @@
             <div class="popular-tag">MOST POPULAR / 最多媽媽選擇</div>
             <div class="price-title">【家庭回購組】買2送1</div>
             <p>一天不到一杯手搖飲的錢，養好體質！</p>
-            <!-- 已經綁定妳的 LINE 官方帳號 -->
+            <!-- 已經綁定專屬的 LINE 官方帳號 -->
             <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">領取買2送1優惠</a>
         </div>
 
@@ -251,7 +233,7 @@
     <div class="footer-cta">
         <h2 style="font-size: 22px;">孩子的體質不是突然變差<br>而是每天慢慢累積出來的。</h2>
         <p style="margin-bottom: 30px;">現在開始養，永遠不嫌晚💜</p>
-        <!-- 已經綁定妳的 LINE 官方帳號 -->
+        <!-- 已經綁定專屬的 LINE 官方帳號 -->
         <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">點我私訊華媽咪</a>
     </div>
 
