@@ -11,11 +11,9 @@
         h2 { color: #6A3B8B; text-align: center; margin-bottom: 25px; font-weight: bold; padding: 0 20px; }
         .section { padding: 40px 20px; }
         
-        /* 按鈕設計 */
         .btn { display: block; width: 85%; margin: 10px auto 0; padding: 14px; background: linear-gradient(90deg, #9D50BB 0%, #6E48AA 100%); color: white; text-align: center; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 30px; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.3); transition: transform 0.2s; }
         .btn:hover { transform: translateY(-2px); }
 
-        /* 方案卡片 */
         .price-box { border: 2px solid #EBEBEB; border-radius: 15px; padding: 25px 15px 15px; margin-bottom: 30px; text-align: center; position: relative; background-color: #fff; }
         .price-box.popular { border: 2.5px solid #9D50BB; box-shadow: 0 0 15px rgba(157, 80, 187, 0.15); }
         .popular-tag { background: #9D50BB; color: white; padding: 4px 15px; border-radius: 20px; font-size: 12px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-weight: bold; white-space: nowrap; }
@@ -23,13 +21,11 @@
         .price-desc { font-size: 14px; color: #666; margin-bottom: 10px; }
         .tip-text { font-size: 11px; color: #9D50BB; font-weight: bold; margin-top: 8px; }
 
-        /* 痛點區卡片排列 */
         .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         .pain-card { background-color: #FFFFFF; padding: 15px 5px; border-radius: 12px; border: 1px solid #F3E1EC; text-align: center; font-size: 11px; color: #5D3A77; font-weight: bold; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 10px rgba(106, 59, 139, 0.05); }
         .icon-wrapper { width: 36px; height: 36px; background-color: #FDF7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .icon-wrapper svg { width: 18px; height: 18px; stroke: #9D50BB; stroke-width: 2; fill: none; }
         
-        /* 卡片式 FAQ 區 */
         .faq-section { background-color: #F8F4FF; padding: 50px 20px; }
         .faq-container { display: flex; flex-direction: column; gap: 15px; }
         .faq-card { background-color: #FFFFFF; border-radius: 20px; padding: 20px; box-shadow: 0 4px 15px rgba(106, 59, 139, 0.05); border: 1px solid #F0E6F2; }
@@ -44,66 +40,60 @@
 <body>
 
 <div class="container">
-    <!-- 【第一區】首圖 (banner2.jpg) -->
+    <!-- 【第一區】首圖 -->
     <div style="padding: 0; text-align: center;">
-        <img src="banner2.jpg" alt="華媽咪推薦益生菌" style="width: 100%; display: block;">
+        <img src="banner2.jpg" alt="主圖" style="width: 100%; display: block;">
         <div style="padding: 20px 0; background-color: #FDF4F6;">
             <a href="#order_top" class="btn">限時體驗優惠 👉 點我了解</a>
         </div>
     </div>
 
-    <!-- 【第二區】痛點區 -->
+    <!-- 【第二區】痛點區 (改為保養敘事) -->
     <div class="section">
-        <h2>媽咪～～這些狀況你一定不陌生🥺</h2>
+        <h2>媽咪～～這些體質煩惱你一定不陌生🥺</h2>
         <div class="card-grid">
-            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M12 2C10 2 8 4 8 7v4c-1 1-2 2-2 4s1 3 3 3h6c2 0 3-1 3-3s-1-3-2-4V7c0-3-2-5-4-5z"></path></svg></div>半夜鼻塞<br>睡不好</div>
-            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect><path d="M12 8v-4s-1-2-3-2-3 2-3 2v4"></path></svg></div>起床狂打<br>噴嚏揉鼻</div>
-            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v5"></path><path d="M18 11a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-5"></path></svg></div>換季開始<br>抓癢</div>
-            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="9" cy="9" r="1"></circle><circle cx="15" cy="15" r="1"></circle></svg></div>皮膚反覆<br>乾癢紅紅</div>
-            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg></div>體質不穩<br>容易生病</div>
-            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M10 4s-4 2-4 6c0 5 4 10 4 10s5-1 7-6c2-5-1-8-3-8-2 0-4-2-4-2z"></path></svg></div>消化不順<br>便便卡卡</div>
+            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M12 2C10 2 8 4 8 7v4c-1 1-2 2-2 4s1 3 3 3h6c2 0 3-1 3-3s-1-3-2-4V7c0-3-2-5-4-5z"></path></svg></div>夜間休息<br>不穩定</div>
+            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect><path d="M12 8v-4s-1-2-3-2-3 2-3 2v4"></path></svg></div>起床後的<br>日常困擾</div>
+            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v5"></path><path d="M18 11a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-5"></path></svg></div>換季時的<br>不適感</div>
+            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="9" cy="9" r="1"></circle><circle cx="15" cy="15" r="1"></circle></svg></div>環境變化的<br>敏感情緒</div>
+            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg></div>成長中的<br>小負擔</div>
+            <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M10 4s-4 2-4 6c0 5 4 10 4 10s5-1 7-6c2-5-1-8-3-8-2 0-4-2-4-2z"></path></svg></div>消化道機能<br>需調理</div>
         </div>
     </div>
 
     <!-- 【第三區】腸道重要性 (gut.jpg) -->
     <div style="padding: 0;">
-        <img src="gut.jpg" alt="腸道影響70%保護力" style="width: 100%; display: block;">
+        <img src="gut.jpg" alt="養好腸道是建立健康的關鍵" style="width: 100%; display: block;">
     </div>
 
-    <!-- 【第四區】產品特色 (usp.jpg) -->
-    <div style="padding: 0;">
-        <img src="usp.jpg" alt="雙效配方特色" style="width: 100%; display: block;">
-    </div>
+    <!-- 【第四區】USP 圖 -->
+    <img src="usp.jpg" alt="雙效配方穩定基礎" style="width: 100%; display: block;">
 
-    <!-- 【第五區】真實見證 (feedback.jpg) -->
-    <div style="padding: 0;">
-        <img src="feedback.jpg" alt="媽媽真實見證" style="width: 100%; display: block;">
-    </div>
+    <!-- 【第五區】見證圖 -->
+    <img src="feedback.jpg" alt="真實日常分享" style="width: 100%; display: block;">
 
-    <!-- 【第六區】長期補充情緒圖 (longterm.jpg) -->
-    <div style="padding: 0;">
-        <img src="longterm.jpg" alt="為什麼選擇長期補充" style="width: 100%; display: block;">
-    </div>
+    <!-- 【第六區】長期補充情緒圖 -->
+    <img src="longterm.jpg" alt="每天的小累積" style="width: 100%; display: block;">
 
-    <!-- 【第七區】轉單方案區 -->
+    <!-- 【第七區】方案 -->
     <div id="order_top" class="section pricing">
         <h2>💜 母親節限定優惠 💜</h2>
         <div class="price-box">
             <div class="price-title">【體驗組】</div>
-            <p class="price-desc">1盒優惠價｜適合第一次嘗試</p>
+            <p class="price-desc">建立保養小習慣的開始</p>
             <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解體驗組</a>
             <div class="tip-text">✨ 點擊私訊：請輸入「想了解體驗組」</div>
         </div>
         <div class="price-box popular">
-            <div class="popular-tag">MOST POPULAR / 最多媽媽選擇</div>
+            <div class="popular-tag">人氣回購組</div>
             <div class="price-title">【家庭回購組】買2送1</div>
-            <p class="price-desc">養好體質，每天不到一杯飲料錢！</p>
+            <p class="price-desc">穩定補充，打好孩子成長基礎！</p>
             <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">領取買2送1優惠</a>
             <div class="tip-text">✨ 點擊私訊：請輸入「買2送1」</div>
         </div>
         <div class="price-box">
             <div class="price-title">【囤貨組】買3送2</div>
-            <p class="price-desc">全家一起吃最划算，再送限定好禮！</p>
+            <p class="price-desc">全家一起保養，維持健康狀態！</p>
             <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解買3送2優惠</a>
             <div class="tip-text">✨ 點擊私訊：請輸入「買3送2」</div>
         </div>
@@ -114,27 +104,27 @@
         <h2>常見問題</h2>
         <div class="faq-container">
             <div class="faq-card">
-                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">幾歲可以吃？</div></div>
-                <div class="faq-a">依照產品建議年齡補充，開始吃副食品即可酌量補充。</div>
+                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">建議補充年齡？</div></div>
+                <div class="faq-a">建議開始食用副食品後，即可依日常習慣酌量補充。</div>
             </div>
             <div class="faq-card">
-                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">多久會有感？</div></div>
-                <div class="faq-a">通常建議穩定補充 1～3 個月觀察，養體質需要時間小累積。</div>
+                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">需要補充多久？</div></div>
+                <div class="faq-a">體質調整需要時間，建議穩定維持 1～3 個月的小累積。</div>
             </div>
             <div class="faq-card">
-                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">可以跟其他保健品吃嗎？</div></div>
-                <div class="faq-a">大部分可以，但特殊情況建議先詢問專業人員。</div>
+                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">可以跟其他產品搭配嗎？</div></div>
+                <div class="faq-a">一般日常補充沒問題，若有特殊體質建議諮詢專業建議。</div>
             </div>
             <div class="faq-card">
-                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">大人可以吃嗎？</div></div>
-                <div class="faq-a">可以，很多媽媽也會一起補充，保養自己的腸道防線。</div>
+                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">大人也可以吃嗎？</div></div>
+                <div class="faq-a">當然可以，維持消化道機能是全家人健康的基礎。</div>
             </div>
         </div>
     </div>
 
-    <!-- 【第九區】收尾諮詢按鈕 -->
+    <!-- 【第九區】收尾 -->
     <div class="footer-cta">
-        <h2 style="font-size: 22px;">現在開始養，永遠不嫌晚💜</h2>
+        <h2 style="font-size: 22px;">打好健康底子，是每天的小堅持💜</h2>
         <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">點我私訊華媽咪</a>
     </div>
 </div>
