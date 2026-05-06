@@ -21,7 +21,7 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.05);
             overflow: hidden;
         }
-        h2 { color: #6A3B8B; text-align: center; margin-bottom: 20px; font-weight: bold; }
+        h2 { color: #6A3B8B; text-align: center; margin-bottom: 25px; font-weight: bold; }
         
         /* 區塊共用 */
         .section { padding: 40px 20px; }
@@ -47,22 +47,55 @@
             box-shadow: 0 6px 20px rgba(110, 72, 170, 0.6);
         }
 
-        /* 區塊 2：痛點卡片 */
-        .pain-points { background-color: #FFF; }
+        /* ✨ 區塊 2：痛點卡片 (升級立體可點擊版) ✨ */
+        .pain-points { background-color: #FFF; padding: 50px 20px; }
         .card-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
         .pain-card {
-            background-color: #FDF7FA;
-            padding: 15px;
-            border-radius: 12px;
+            background-color: #FFFFFF;
+            padding: 20px 10px;
+            border-radius: 16px;
             border: 1px solid #F3E1EC;
             text-align: center;
             font-size: 14px;
-            color: #6A3B8B;
+            color: #5D3A77;
             font-weight: bold;
+            box-shadow: 0 4px 12px rgba(106, 59, 139, 0.06); /* 柔和微立體陰影 */
+            transition: all 0.3s ease; /* Hover 動畫過渡 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .pain-card:hover {
+            transform: translateY(-4px); /* 滑過時往上浮動 */
+            box-shadow: 0 8px 20px rgba(106, 59, 139, 0.15); /* 陰影加深，產生點擊衝動 */
+            border-color: #DDA0DD;
+        }
+        
+        /* 韓系高級感圖示容器 */
+        .icon-wrapper {
+            width: 44px;
+            height: 44px;
+            background-color: #FDF7FA;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 內嵌圖示的顏色與線條粗細設定 */
+        .icon-wrapper svg {
+            width: 24px;
+            height: 24px;
+            stroke: #9D50BB;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         /* 區塊 4：產品特色 USP */
@@ -131,27 +164,65 @@
 
     <!-- 【第一屏】首屏爆點（滿版圖片版） -->
     <div style="padding: 0; text-align: center; background-color: #FDF4F6;">
-        <!-- 將整張圖片變成一個大按鈕，點擊就會滑到下方訂購區 -->
         <a href="#order" style="display: block;">
-            <!-- 這裡抓取妳剛剛上傳的 banner.jpg -->
             <img src="banner.jpg" alt="華媽咪推薦雙效益生菌" style="width: 100%; display: block; border-bottom: 5px solid #FDF4F6;">
         </a>
     </div>
 
-    <!-- 【第二區】痛點區 -->
+    <!-- ✨ 【第二區】痛點區 (升級版) ✨ -->
     <div class="section pain-points">
         <h2>媽咪～～這些狀況你一定不陌生🥺</h2>
         <div class="card-grid">
-            <div class="pain-card">🤧 半夜鼻塞睡不好</div>
-            <div class="pain-card">👃 早上起床狂揉鼻子</div>
-            <div class="pain-card">🦟 換季開始抓癢</div>
-            <div class="pain-card">🍎 皮膚反覆乾癢紅紅</div>
-            <div class="pain-card">😷 體質不穩容易生病</div>
-            <div class="pain-card">🚽 便便卡卡</div>
+            <div class="pain-card">
+                <div class="icon-wrapper">
+                    <!-- 月亮睡不好圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </div>
+                半夜鼻塞睡不好
+            </div>
+            <div class="pain-card">
+                <div class="icon-wrapper">
+                    <!-- 揉鼻子(風/紙巾)圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                </div>
+                早上起床狂揉鼻子
+            </div>
+            <div class="pain-card">
+                <div class="icon-wrapper">
+                    <!-- 抓癢(手)圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5"></path><path d="M18 11a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-5"></path></svg>
+                </div>
+                換季開始抓癢
+            </div>
+            <div class="pain-card">
+                <div class="icon-wrapper">
+                    <!-- 皮膚(修復水滴)圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                </div>
+                皮膚反覆乾癢紅紅
+            </div>
+            <div class="pain-card">
+                <div class="icon-wrapper">
+                    <!-- 體質(保護盾牌)圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                體質不穩容易生病
+            </div>
+            <div class="pain-card">
+                <div class="icon-wrapper">
+                    <!-- 消化(腸胃)圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                </div>
+                便便卡卡
+            </div>
         </div>
-        <p style="text-align: center; margin-top: 20px; font-weight: bold; color: #555;">
-            很多媽媽以為只是「體質問題」<br>其實真正關鍵是：<span style="color: #6A3B8B;">👉 腸道菌相失衡。</span>
-        </p>
+        
+        <!-- ✨ 新版情緒共鳴文案 ✨ -->
+        <div style="text-align: center; margin-top: 30px; font-weight: bold; color: #666; line-height: 1.8; font-size: 15px;">
+            很多媽媽以為只是孩子體質差…<br>
+            但其實真正影響孩子穩定度的，<br>
+            <span style="color: #6A3B8B; font-size: 18px;">往往是「腸道菌相失衡」。</span>
+        </div>
     </div>
 
     <!-- 【第四區】產品 USP -->
@@ -202,7 +273,6 @@
             <div class="popular-tag">MOST POPULAR / 最多媽媽選擇</div>
             <div class="price-title">【家庭回購組】買2送1</div>
             <p>一天不到一杯手搖飲的錢，養好體質！</p>
-            <!-- 已經綁定專屬的 LINE 官方帳號 -->
             <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">領取買2送1優惠</a>
         </div>
 
@@ -233,7 +303,6 @@
     <div class="footer-cta">
         <h2 style="font-size: 22px;">孩子的體質不是突然變差<br>而是每天慢慢累積出來的。</h2>
         <p style="margin-bottom: 30px;">現在開始養，永遠不嫌晚💜</p>
-        <!-- 已經綁定專屬的 LINE 官方帳號 -->
         <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">點我私訊華媽咪</a>
     </div>
 
