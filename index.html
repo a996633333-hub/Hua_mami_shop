@@ -47,50 +47,51 @@
             box-shadow: 0 6px 20px rgba(110, 72, 170, 0.6);
         }
 
-        /* ✨ 區塊 2：痛點卡片 (升級立體可點擊版) ✨ */
-        .pain-points { background-color: #FFF; padding: 50px 20px; }
+        /* ✨ 區塊 2：痛點卡片 (3x2 六宮格縮小升級版) ✨ */
+        .pain-points { background-color: #FFF; padding: 50px 15px; }
+        
+        /* 這裡改成 repeat(3, 1fr) 就是一排 3 個囉！ */
         .card-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; /* 卡片間距稍微縮小以塞下 3 個 */
         }
         .pain-card {
             background-color: #FFFFFF;
-            padding: 20px 10px;
-            border-radius: 16px;
+            padding: 15px 5px; /* 卡片內部縮小 20% */
+            border-radius: 12px;
             border: 1px solid #F3E1EC;
             text-align: center;
-            font-size: 14px;
+            font-size: 12px; /* 字體稍微縮小配合版面 */
             color: #5D3A77;
             font-weight: bold;
-            box-shadow: 0 4px 12px rgba(106, 59, 139, 0.06); /* 柔和微立體陰影 */
-            transition: all 0.3s ease; /* Hover 動畫過渡 */
+            box-shadow: 0 4px 10px rgba(106, 59, 139, 0.05); 
+            transition: all 0.3s ease; 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
         }
         .pain-card:hover {
-            transform: translateY(-4px); /* 滑過時往上浮動 */
-            box-shadow: 0 8px 20px rgba(106, 59, 139, 0.15); /* 陰影加深，產生點擊衝動 */
+            transform: translateY(-4px); 
+            box-shadow: 0 8px 18px rgba(106, 59, 139, 0.15); 
             border-color: #DDA0DD;
         }
         
-        /* 韓系高級感圖示容器 */
+        /* 韓系高級感圖示容器 - 整體縮小 20% */
         .icon-wrapper {
-            width: 44px;
-            height: 44px;
+            width: 36px; 
+            height: 36px;
             background-color: #FDF7FA;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        /* 內嵌圖示的顏色與線條粗細設定 */
         .icon-wrapper svg {
-            width: 24px;
-            height: 24px;
+            width: 18px; 
+            height: 18px;
             stroke: #9D50BB;
             stroke-width: 2;
             fill: none;
@@ -171,57 +172,61 @@
 
     <!-- ✨ 【第二區】痛點區 (升級版) ✨ -->
     <div class="section pain-points">
-     <h2 style="line-height: 1.5; font-size: 22px;">「很多孩子反反覆覆，<br>其實都有這些共同狀況。」</h2>
+        <!-- 拿掉引號，回歸專業質感 -->
+        <h2 style="line-height: 1.5; font-size: 20px;">很多孩子反反覆覆，<br>其實都有這些共同狀況。</h2>
+        
         <div class="card-grid">
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 月亮睡不好圖示 -->
-                    <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <!-- 鼻子/呼吸圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M12 2C10 2 8 4 8 7v4c-1 1-2 2-2 4s1 3 3 3h6c2 0 3-1 3-3s-1-3-2-4V7c0-3-2-5-4-5z"></path></svg>
                 </div>
-                半夜鼻塞睡不好
+                半夜鼻塞<br>睡不好
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 揉鼻子(風/紙巾)圖示 -->
-                    <svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                    <!-- 衛生紙盒/打噴嚏圖示 -->
+                    <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect><path d="M12 8v-4s-1-2-3-2-3 2-3 2v4"></path></svg>
                 </div>
-                早上起床狂揉鼻子
+                起床狂打<br>噴嚏揉鼻
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 抓癢(手)圖示 -->
-                    <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5"></path><path d="M18 11a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-5"></path></svg>
+                    <!-- 手部抓癢圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v5"></path><path d="M18 11a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-5"></path></svg>
                 </div>
-                換季開始抓癢
+                換季開始<br>反覆抓癢
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 皮膚(修復水滴)圖示 -->
-                    <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    <!-- 皮膚乾癢紅點圖示 -->
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="9" cy="9" r="1"></circle><circle cx="15" cy="15" r="1"></circle><circle cx="9" cy="15" r="1"></circle></svg>
                 </div>
-                皮膚反覆乾癢紅紅
+                皮膚反覆<br>乾癢紅紅
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 體質(保護盾牌)圖示 -->
-                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <!-- 溫度計/生病圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path><path d="M12 8v4"></path></svg>
                 </div>
-                體質不穩容易生病
+                體質不穩<br>容易生病
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 消化(腸胃)圖示 -->
-                    <svg viewBox="0 0 24 24"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                    <!-- 腸胃/肚子卡卡圖示 -->
+                    <svg viewBox="0 0 24 24"><path d="M10 4s-4 2-4 6c0 5 4 10 4 10s5-1 7-6c2-5-1-8-3-8-2 0-4-2-4-2z"></path></svg>
                 </div>
-                便便卡卡
+                消化不順<br>便便卡卡
             </div>
         </div>
         
-        <!-- ✨ 新版情緒共鳴文案 ✨ -->
-        <div style="text-align: center; margin-top: 30px; font-weight: bold; color: #666; line-height: 1.8; font-size: 15px;">
-            很多媽媽以為只是孩子體質差…<br>
-            但其實真正影響孩子穩定度的，<br>
-            <span style="color: #6A3B8B; font-size: 18px;">往往是「腸道菌相失衡」。</span>
+        <!-- ✨ 底部情緒共鳴文案 (強制完美置中) ✨ -->
+        <div style="display: flex; justify-content: center; margin-top: 35px;">
+            <p style="text-align: center; font-weight: bold; color: #666; line-height: 1.8; font-size: 15px; margin: 0;">
+                很多媽媽以為只是孩子體質差…<br>
+                但真正影響孩子穩定度的，<br>
+                <span style="color: #6A3B8B; font-size: 18px;">往往是「腸道菌相失衡」。</span>
+            </p>
         </div>
     </div>
 
