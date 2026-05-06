@@ -5,50 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>華媽咪推薦｜專利雙效益生菌</title>
     <style>
+        /* 讓捲動更流暢 */
         html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-            margin: 0; padding: 0; background-color: #FCF9F9; color: #4A4A4A; line-height: 1.6;
-        }
+        body { font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif; margin: 0; padding: 0; background-color: #FCF9F9; color: #4A4A4A; line-height: 1.6; }
         .container { max-width: 600px; margin: 0 auto; background-color: #FFFFFF; box-shadow: 0 0 20px rgba(0,0,0,0.05); overflow: hidden; }
         h2 { color: #6A3B8B; text-align: center; margin-bottom: 25px; font-weight: bold; }
         .section { padding: 40px 20px; }
         
-        .btn {
-            display: block; width: 85%; margin: 5px auto 0; padding: 12px;
-            background: linear-gradient(90deg, #9D50BB 0%, #6E48AA 100%);
-            color: white; text-align: center; text-decoration: none;
-            font-size: 16px; font-weight: bold; border-radius: 25px;
-            box-shadow: 0 4px 10px rgba(110, 72, 170, 0.3); transition: transform 0.2s;
-        }
+        /* 按鈕樣式 */
+        .btn { display: block; width: 85%; margin: 10px auto 0; padding: 14px; background: linear-gradient(90deg, #9D50BB 0%, #6E48AA 100%); color: white; text-align: center; text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 30px; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.3); transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
 
-        /* 方案卡片優化 */
-        .price-box {
-            border: 2px solid #EBEBEB; border-radius: 15px; padding: 25px 15px 15px;
-            margin-bottom: 30px; text-align: center; position: relative;
-            background-color: #fff;
-        }
-        .price-box.popular { border: 2px solid #9D50BB; box-shadow: 0 0 15px rgba(157, 80, 187, 0.1); }
-        .popular-tag {
-            background: #9D50BB; color: white; padding: 4px 15px; border-radius: 20px;
-            font-size: 12px; position: absolute; top: -14px; left: 50%;
-            transform: translateX(-50%); font-weight: bold; white-space: nowrap;
-        }
-        .price-title { font-size: 19px; font-weight: bold; color: #333; margin-bottom: 5px; }
-        .price-desc { font-size: 14px; color: #666; margin-bottom: 12px; }
+        /* 方案方框 */
+        .price-box { border: 2px solid #EBEBEB; border-radius: 15px; padding: 25px 15px 15px; margin-bottom: 30px; text-align: center; position: relative; background-color: #fff; }
+        .price-box.popular { border: 2.5px solid #9D50BB; box-shadow: 0 0 15px rgba(157, 80, 187, 0.15); }
+        .popular-tag { background: #9D50BB; color: white; padding: 4px 15px; border-radius: 20px; font-size: 12px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-weight: bold; white-space: nowrap; }
+        .price-title { font-size: 20px; font-weight: bold; color: #333; margin-bottom: 5px; }
+        .price-desc { font-size: 14px; color: #666; margin-bottom: 15px; }
 
         /* 痛點區圖示 */
         .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-        .pain-card {
-            background-color: #FFFFFF; padding: 15px 5px; border-radius: 12px;
-            border: 1px solid #F3E1EC; text-align: center; font-size: 11px;
-            color: #5D3A77; font-weight: bold; display: flex; flex-direction: column;
-            align-items: center; justify-content: center; gap: 8px;
-        }
-        .icon-wrapper {
-            width: 36px; height: 36px; background-color: #FDF7FA; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-        }
+        .pain-card { background-color: #FFFFFF; padding: 15px 5px; border-radius: 12px; border: 1px solid #F3E1EC; text-align: center; font-size: 11px; color: #5D3A77; font-weight: bold; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 10px rgba(106, 59, 139, 0.05); }
+        .icon-wrapper { width: 36px; height: 36px; background-color: #FDF7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .icon-wrapper svg { width: 18px; height: 18px; stroke: #9D50BB; stroke-width: 2; fill: none; }
         
         .testimonial { background-color: #FFF5F7; padding: 18px; border-radius: 15px; margin-bottom: 12px; border-left: 4px solid #DDA0DD; font-style: italic; font-size: 14px; }
@@ -59,14 +37,14 @@
 
 <div class="container">
 
-    <!-- 首屏 -->
+    <!-- 第一屏：首圖 -->
     <div style="padding: 0; text-align: center;">
         <a href="#order_top" style="display: block;">
-            <img src="banner2.jpg" alt="主視圖" style="width: 100%; display: block;">
+            <img src="banner2.jpg" alt="華媽咪推薦益生菌" style="width: 100%; display: block;">
         </a>
     </div>
 
-    <!-- 痛點區 -->
+    <!-- 第二區：痛點區 -->
     <div class="section">
         <h2 style="line-height: 1.5; font-size: 20px;">很多孩子反反覆覆，<br>其實都有這些共同狀況。</h2>
         <div class="card-grid">
@@ -77,15 +55,20 @@
             <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg></div>體質不穩<br>容易生病</div>
             <div class="pain-card"><div class="icon-wrapper"><svg viewBox="0 0 24 24"><path d="M10 4s-4 2-4 6c0 5 4 10 4 10s5-1 7-6c2-5-1-8-3-8-2 0-4-2-4-2z"></path></svg></div>消化不順<br>便便卡卡</div>
         </div>
-        <div style="text-align: center; margin-top: 30px; font-weight: bold; color: #666; line-height: 1.8; font-size: 15px;">
-            很多媽媽以為只是孩子體質差…<br>但真正影響孩子穩定度的，<br>
-            <span style="color: #6A3B8B; font-size: 18px;">往往是「腸道菌相失衡」。</span>
+        <div style="display: flex; justify-content: center; margin-top: 35px;">
+            <p style="text-align: center; font-weight: bold; color: #666; line-height: 1.8; font-size: 15px; margin: 0;">
+                很多媽媽以為只是孩子體質差…<br>但真正影響孩子穩定度的，<br>
+                <span style="color: #6A3B8B; font-size: 18px;">往往是「腸道菌相失衡」。</span>
+            </p>
         </div>
     </div>
 
-    <div style="padding: 0;"><img src="usp.jpg" alt="特色圖" style="width: 100%; display: block;"></div>
+    <!-- 第三區：特色區 -->
+    <div style="padding: 0;">
+        <img src="usp.jpg" alt="雙效配方特色" style="width: 100%; display: block;">
+    </div>
 
-    <!-- 見證區 -->
+    <!-- 第四區：見證區 -->
     <div class="section">
         <h2>很多媽媽都是這樣開始的…</h2>
         <div class="testimonial">「以前每天起床都在揉鼻子，現在真的穩很多。」—— 辰陽媽媽</div>
@@ -93,33 +76,34 @@
         <div class="testimonial">「原本只是想改善便便，結果沒想到體質一起變穩。」—— 台中林媽媽</div>
     </div>
 
-    <!-- 方案區 -->
+    <!-- 第五區：優惠方案區 -->
     <div id="order_top" class="section pricing">
-        <h2 style="margin-bottom: 40px;">💜 母親節限定優惠 💜</h2>
+        <h2>💜 母親節限定優惠 💜</h2>
         
         <div class="price-box">
             <div class="price-title">【體驗組】</div>
             <p class="price-desc">適合第一次嘗試的寶貝</p>
-            <a href="https://line.me/ti/p/~@085jvxoa" class="btn">了解體驗組</a>
+            <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解體驗組</a>
         </div>
 
         <div class="price-box popular">
             <div class="popular-tag">人氣回購組</div>
             <div class="price-title">【家庭回購組】買2送1</div>
             <p class="price-desc">一天不到一杯手搖飲的錢，養好體質！</p>
-            <a href="https://line.me/ti/p/~@085jvxoa" class="btn">領取買2送1優惠</a>
+            <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">領取買2送1優惠</a>
         </div>
 
         <div class="price-box">
             <div class="price-title">【囤貨組】買3送2</div>
-            <p class="price-desc">全家一起吃最劃算，加送限定好禮！</p>
-            <a href="https://line.me/ti/p/~@085jvxoa" class="btn">了解買3送2優惠</a>
+            <p class="price-desc">全家一起吃最划算，加送限定好禮！</p>
+            <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解買3送2優惠</a>
         </div>
     </div>
 
+    <!-- 最後 CTA -->
     <div class="footer-cta">
         <h2 style="font-size: 22px;">現在開始養，永遠不嫌晚💜</h2>
-        <a href="https://line.me/ti/p/~@085jvxoa" class="btn">點我私訊華媽咪</a>
+        <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">點我私訊華媽咪</a>
     </div>
 
 </div>
