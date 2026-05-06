@@ -23,13 +23,13 @@
         .price-desc { font-size: 14px; color: #666; margin-bottom: 10px; }
         .tip-text { font-size: 11px; color: #9D50BB; font-weight: bold; margin-top: 8px; }
 
-        /* 痛點區圖示排列 */
+        /* 痛點區卡片排列 */
         .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         .pain-card { background-color: #FFFFFF; padding: 15px 5px; border-radius: 12px; border: 1px solid #F3E1EC; text-align: center; font-size: 11px; color: #5D3A77; font-weight: bold; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 10px rgba(106, 59, 139, 0.05); }
         .icon-wrapper { width: 36px; height: 36px; background-color: #FDF7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
         .icon-wrapper svg { width: 18px; height: 18px; stroke: #9D50BB; stroke-width: 2; fill: none; }
         
-        /* ✨ 新增：卡片式 FAQ ✨ */
+        /* 卡片式 FAQ 區 */
         .faq-section { background-color: #F8F4FF; padding: 50px 20px; }
         .faq-container { display: flex; flex-direction: column; gap: 15px; }
         .faq-card { background-color: #FFFFFF; border-radius: 20px; padding: 20px; box-shadow: 0 4px 15px rgba(106, 59, 139, 0.05); border: 1px solid #F0E6F2; }
@@ -44,9 +44,9 @@
 <body>
 
 <div class="container">
-    <!-- 【第一屏】首圖 -->
+    <!-- 【第一區】首圖 (banner2.jpg) -->
     <div style="padding: 0; text-align: center;">
-        <img src="banner2.jpg" alt="主圖" style="width: 100%; display: block;">
+        <img src="banner2.jpg" alt="華媽咪推薦益生菌" style="width: 100%; display: block;">
         <div style="padding: 20px 0; background-color: #FDF4F6;">
             <a href="#order_top" class="btn">限時體驗優惠 👉 點我了解</a>
         </div>
@@ -65,22 +65,27 @@
         </div>
     </div>
 
-    <!-- 【第三區】專業建議區 -->
-    <div class="section" style="background-color: #F8F4FF;">
-        <h2 style="font-size: 20px;">因為腸道影響了身體 70% 免疫力</h2>
-        <p style="text-align: center; color: #666; font-size: 15px;">真正重要的不是「等不舒服才處理」<br>而是平常就把體質底子養起來。</p>
+    <!-- 【第三區】腸道重要性 (gut.jpg) -->
+    <div style="padding: 0;">
+        <img src="gut.jpg" alt="腸道影響70%保護力" style="width: 100%; display: block;">
     </div>
 
-    <!-- 【第四區】USP 圖 -->
-    <img src="usp.jpg" alt="產品特色" style="width: 100%; display: block;">
+    <!-- 【第四區】產品特色 (usp.jpg) -->
+    <div style="padding: 0;">
+        <img src="usp.jpg" alt="雙效配方特色" style="width: 100%; display: block;">
+    </div>
 
-    <!-- 【第五區】見證圖 -->
-    <img src="feedback.jpg" alt="媽媽見證" style="width: 100%; display: block;">
+    <!-- 【第五區】真實見證 (feedback.jpg) -->
+    <div style="padding: 0;">
+        <img src="feedback.jpg" alt="媽媽真實見證" style="width: 100%; display: block;">
+    </div>
 
-    <!-- 【第六區】長期補充圖 -->
-    <img src="longterm.jpg" alt="長期補充" style="width: 100%; display: block;">
+    <!-- 【第六區】長期補充情緒圖 (longterm.jpg) -->
+    <div style="padding: 0;">
+        <img src="longterm.jpg" alt="為什麼選擇長期補充" style="width: 100%; display: block;">
+    </div>
 
-    <!-- 【第七區】方案 -->
+    <!-- 【第七區】轉單方案區 -->
     <div id="order_top" class="section pricing">
         <h2>💜 母親節限定優惠 💜</h2>
         <div class="price-box">
@@ -98,7 +103,7 @@
         </div>
         <div class="price-box">
             <div class="price-title">【囤貨組】買3送2</div>
-            <p class="price-desc">全家吃最划算，加送限定好禮！</p>
+            <p class="price-desc">全家一起吃最划算，再送限定好禮！</p>
             <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解買3送2優惠</a>
             <div class="tip-text">✨ 點擊私訊：請輸入「買3送2」</div>
         </div>
@@ -110,24 +115,24 @@
         <div class="faq-container">
             <div class="faq-card">
                 <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">幾歲可以吃？</div></div>
-                <div class="faq-a">開始吃副食品後，即可依照產品建議酌量補充。</div>
+                <div class="faq-a">依照產品建議年齡補充，開始吃副食品即可酌量補充。</div>
             </div>
             <div class="faq-card">
                 <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">多久會有感？</div></div>
-                <div class="faq-a">每個孩子體質不同，通常建議穩定補充 1～3 個月觀察。</div>
+                <div class="faq-a">通常建議穩定補充 1～3 個月觀察，養體質需要時間小累積。</div>
             </div>
             <div class="faq-card">
                 <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">可以跟其他保健品吃嗎？</div></div>
                 <div class="faq-a">大部分可以，但特殊情況建議先詢問專業人員。</div>
             </div>
             <div class="faq-card">
-                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">大人可以補充嗎？</div></div>
-                <div class="faq-a">可以，很多媽媽也會跟著孩子一起補充，保養腸道。</div>
+                <div class="faq-header"><div class="faq-icon">Q</div><div class="faq-q">大人可以吃嗎？</div></div>
+                <div class="faq-a">可以，很多媽媽也會一起補充，保養自己的腸道防線。</div>
             </div>
         </div>
     </div>
 
-    <!-- 【第九區】收尾 -->
+    <!-- 【第九區】收尾諮詢按鈕 -->
     <div class="footer-cta">
         <h2 style="font-size: 22px;">現在開始養，永遠不嫌晚💜</h2>
         <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">點我私訊華媽咪</a>
