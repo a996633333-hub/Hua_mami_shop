@@ -49,20 +49,18 @@
 
         /* ✨ 區塊 2：痛點卡片 (3x2 六宮格縮小升級版) ✨ */
         .pain-points { background-color: #FFF; padding: 50px 15px; }
-        
-        /* 這裡改成 repeat(3, 1fr) 就是一排 3 個囉！ */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 10px; /* 卡片間距稍微縮小以塞下 3 個 */
+            gap: 10px;
         }
         .pain-card {
             background-color: #FFFFFF;
-            padding: 15px 5px; /* 卡片內部縮小 20% */
+            padding: 15px 5px;
             border-radius: 12px;
             border: 1px solid #F3E1EC;
             text-align: center;
-            font-size: 12px; /* 字體稍微縮小配合版面 */
+            font-size: 12px;
             color: #5D3A77;
             font-weight: bold;
             box-shadow: 0 4px 10px rgba(106, 59, 139, 0.05); 
@@ -79,7 +77,7 @@
             border-color: #DDA0DD;
         }
         
-        /* 韓系高級感圖示容器 - 整體縮小 20% */
+        /* 韓系高級感圖示容器 */
         .icon-wrapper {
             width: 36px; 
             height: 36px;
@@ -98,20 +96,6 @@
             stroke-linecap: round;
             stroke-linejoin: round;
         }
-
-        /* 區塊 4：產品特色 USP */
-        .usp-section { background-color: #F8F4FF; }
-        .usp-item {
-            background: #FFF;
-            margin-bottom: 15px;
-            padding: 15px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-        }
-        .usp-icon { font-size: 24px; margin-right: 15px; }
-        .usp-text strong { color: #6A3B8B; display: block; }
         
         /* 區塊 5：見證區塊 */
         .testimonial {
@@ -163,7 +147,7 @@
 
 <div class="container">
 
-    <!-- 【第一屏】首屏爆點（滿版圖片版） -->
+    <!-- 【第一屏】首屏爆點（滿版圖片版，使用 banner2.jpg） -->
     <div style="padding: 0; text-align: center; background-color: #FDF4F6;">
         <a href="#order" style="display: block;">
             <img src="banner2.jpg" alt="華媽咪推薦雙效益生菌" style="width: 100%; display: block; border-bottom: 5px solid #FDF4F6;">
@@ -172,55 +156,47 @@
 
     <!-- ✨ 【第二區】痛點區 (升級版) ✨ -->
     <div class="section pain-points">
-        <!-- 拿掉引號，回歸專業質感 -->
         <h2 style="line-height: 1.5; font-size: 20px;">很多孩子反反覆覆，<br>其實都有這些共同狀況。</h2>
         
         <div class="card-grid">
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 鼻子/呼吸圖示 -->
                     <svg viewBox="0 0 24 24"><path d="M12 2C10 2 8 4 8 7v4c-1 1-2 2-2 4s1 3 3 3h6c2 0 3-1 3-3s-1-3-2-4V7c0-3-2-5-4-5z"></path></svg>
                 </div>
                 半夜鼻塞<br>睡不好
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 衛生紙盒/打噴嚏圖示 -->
                     <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect><path d="M12 8v-4s-1-2-3-2-3 2-3 2v4"></path></svg>
                 </div>
                 起床狂打<br>噴嚏揉鼻
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 手部抓癢圖示 -->
                     <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2 2v5"></path><path d="M18 11a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-5"></path></svg>
                 </div>
                 換季開始<br>反覆抓癢
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 皮膚乾癢紅點圖示 -->
                     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="9" cy="9" r="1"></circle><circle cx="15" cy="15" r="1"></circle><circle cx="9" cy="15" r="1"></circle></svg>
                 </div>
                 皮膚反覆<br>乾癢紅紅
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 溫度計/生病圖示 -->
                     <svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path><path d="M12 8v4"></path></svg>
                 </div>
                 體質不穩<br>容易生病
             </div>
             <div class="pain-card">
                 <div class="icon-wrapper">
-                    <!-- 腸胃/肚子卡卡圖示 -->
                     <svg viewBox="0 0 24 24"><path d="M10 4s-4 2-4 6c0 5 4 10 4 10s5-1 7-6c2-5-1-8-3-8-2 0-4-2-4-2z"></path></svg>
                 </div>
                 消化不順<br>便便卡卡
             </div>
         </div>
         
-        <!-- ✨ 底部情緒共鳴文案 (強制完美置中) ✨ -->
         <div style="display: flex; justify-content: center; margin-top: 35px;">
             <p style="text-align: center; font-weight: bold; color: #666; line-height: 1.8; font-size: 15px; margin: 0;">
                 很多媽媽以為只是孩子體質差…<br>
@@ -230,25 +206,9 @@
         </div>
     </div>
 
-    <!-- 【第四區】產品 USP -->
-    <div class="section usp-section">
-        <h2>不是一般益生菌<br>而是「雙效配方」一起調理</h2>
-        <div class="usp-item">
-            <div class="usp-icon">🛡️</div>
-            <div class="usp-text"><strong>① 專利 LP28</strong>幫助調整體質，換季、塵蟎問題媽咪超有感。</div>
-        </div>
-        <div class="usp-item">
-            <div class="usp-icon">✨</div>
-            <div class="usp-text"><strong>② 專利 LGG</strong>幫助穩定保護力，調整敏感體質。</div>
-        </div>
-        <div class="usp-item">
-            <div class="usp-icon">🦠</div>
-            <div class="usp-text"><strong>③ 全桿菌配方</strong>定殖力更好，不是吃心安而已。</div>
-        </div>
-        <div class="usp-item">
-            <div class="usp-icon">😋</div>
-            <div class="usp-text"><strong>④ 粉狀好入口</strong>小孩接受度高，不用冰、外出也方便。</div>
-        </div>
+    <!-- 【第四區】產品 USP（圖片版，使用 usp.jpg） -->
+    <div style="padding: 0;">
+        <img src="usp.jpg" alt="雙效配方特色" style="width: 100%; display: block;">
     </div>
 
     <!-- 【第五區】媽媽真實見證 -->
