@@ -15,7 +15,8 @@
         .price-box.popular { border: 2.5px solid #9D50BB; box-shadow: 0 0 15px rgba(157, 80, 187, 0.15); }
         .popular-tag { background: #9D50BB; color: white; padding: 4px 15px; border-radius: 20px; font-size: 12px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-weight: bold; white-space: nowrap; }
         .price-title { font-size: 20px; font-weight: bold; color: #333; margin-bottom: 5px; }
-        .price-desc { font-size: 14px; color: #666; margin-bottom: 15px; }
+        .price-desc { font-size: 14px; color: #666; margin-bottom: 10px; }
+        .tip-text { font-size: 11px; color: #9D50BB; font-weight: bold; margin-top: 5px; } /* 提示字樣式 */
         .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         .pain-card { background-color: #FFFFFF; padding: 15px 5px; border-radius: 12px; border: 1px solid #F3E1EC; text-align: center; font-size: 11px; color: #5D3A77; font-weight: bold; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
         .icon-wrapper { width: 36px; height: 36px; background-color: #FDF7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
@@ -27,12 +28,14 @@
 <body>
 
 <div class="container">
+    <!-- 第一屏 -->
     <div style="padding: 0; text-align: center;">
         <a href="#order_top" style="display: block;">
             <img src="banner2.jpg" alt="主圖" style="width: 100%; display: block;">
         </a>
     </div>
 
+    <!-- 痛點區 -->
     <div class="section">
         <h2 style="line-height: 1.5; font-size: 20px;">很多孩子反反覆覆，<br>其實都有這些共同狀況。</h2>
         <div class="card-grid">
@@ -51,42 +54,37 @@
 
     <div style="padding: 0;"><img src="usp.jpg" alt="特色" style="width: 100%; display: block;"></div>
 
-    <div class="section">
-        <h2>很多媽媽都是這樣開始的…</h2>
-        <div class="testimonial">「以前每天起床都在揉鼻子，現在真的穩很多。」—— 辰陽媽媽</div>
-        <div class="testimonial">「幼兒園超容易被傳染，我後來固定讓孩子補充，真的差很多。」—— 台北陳太太</div>
-        <div class="testimonial">「原本只是想改善便便，結果沒想到體質一起變穩。」—— 台中林媽媽</div>
-    </div>
-
+    <!-- 方案區 -->
     <div id="order_top" class="section pricing">
         <h2>💜 母親節限定優惠 💜</h2>
         
         <div class="price-box">
             <div class="price-title">【體驗組】</div>
             <p class="price-desc">適合第一次嘗試的寶貝</p>
-            <!-- 嘗試使用 LINE 編碼連結 -->
-            <a href="https://line.me/R/msg/text/?%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E5%9C%A8%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E6%83%B3%E4%BA%86%E8%A7%A3%E3%80%90%E9%AB%94%E9%A9%93%E7%B5%84%E3%80%91%E6%96%B9%E6%A1%88%EF%BC%81" class="btn">了解體驗組</a>
+            <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解體驗組</a>
+            <div class="tip-text">💡 點擊私訊：請輸入「想了解體驗組」</div>
         </div>
 
         <div class="price-box popular">
             <div class="popular-tag">人氣回購組</div>
             <div class="price-title">【家庭回購組】買2送1</div>
-            <p class="price-desc">一天不到一杯手搖飲的錢，養好體質！</p>
-            <a href="https://line.me/R/msg/text/?%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E5%9C%A8%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E6%83%B3%E8%B3%BC%E8%B2%B7%E3%80%90%E8%B2%B72%E9%80%811%E3%80%91%E4%BA%BA%E6%B0%A3%E6%96%B9%E6%A1%88%EF%BC%81" class="btn">領取買2送1優惠</a>
+            <p class="price-desc">養好體質，每天不到一杯飲料錢！</p>
+            <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">領取買2送1優惠</a>
+            <div class="tip-text">💡 點擊私訊：請輸入「買2送1」</div>
         </div>
 
         <div class="price-box">
             <div class="price-title">【囤貨組】買3送2</div>
-            <p class="price-desc">全家一起吃最划算，加送限定好禮！</p>
-            <a href="https://line.me/R/msg/text/?%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E5%9C%A8%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E6%83%B3%E8%B3%BC%E8%B2%B7%E3%80%90%E8%B2%B73%E9%80%812%E3%80%91%E5%9B%A4%E8%B2%A8%E6%9C%80%E5%88%92%E7%AE%97%E6%96%B9%E6%A1%88%EF%BC%81" class="btn">了解買3送2優惠</a>
+            <p class="price-desc">全家一起吃最划算，再送限定好禮！</p>
+            <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">了解買3送2優惠</a>
+            <div class="tip-text">💡 點擊私訊：請輸入「買3送2」</div>
         </div>
     </div>
 
     <div class="footer-cta">
         <h2 style="font-size: 22px;">現在開始養，永遠不嫌晚💜</h2>
-        <a href="https://line.me/R/msg/text/?%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E7%9C%8B%E4%BA%86%E7%B6%B2%E9%A0%81%E6%83%B3%E6%89%BE%E8%8F%AF%E5%AC%BD%E5%AC%BD%E8%AB%AE%E8%A9%A2%E7%9B%8A%E7%94%9F%E8%8F%8C%EF%BC%81" class="btn">點我私訊華媽咪</a>
+        <a href="https://s.luckycat.no8.io/link/channels/SbmYRhdHe3" class="btn">點我私訊華媽咪</a>
     </div>
-
 </div>
 
 </body>
